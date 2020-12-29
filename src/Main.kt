@@ -18,6 +18,7 @@ fun main(args: Array<String>) {
     val nodes = binarySearchTree.inOrderTraversal()
 
     for(node in nodes){
-        System.out.print("${node.key} ")
+        //System.out.print("${node.key} ")
     }
+    System.out.println(binarySearchTree.searchFor(80))
 }

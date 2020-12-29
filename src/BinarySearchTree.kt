@@ -18,11 +18,23 @@ class BinarySearchTree<T : Comparable<T>> {
         }
     }
 
-    fun searchFor(key: T){
-
+    fun searchFor(key: T): String {
+        return searchFor(key, rootNode!!)
     }
 
-    private fun searchFor(key : T, node : TreeNode<T>)
+    private fun searchFor(key: T, node: TreeNode<T>): String {
+        if (key > node.key) {
+            // search to the right of the node
+            if (node.rightNode != null) return searchFor(key, node.rightNode!!)
+            else return "Key not found"
+        } else if (key < node.key) {
+            // search to the left of the node
+            if (node.leftNode != null) return searchFor(key, node.leftNode!!)
+            else return "Key not found"
+        } else {
+            return "Key found"
+        }
+    }
 
     fun inOrderTraversal(): MutableList<TreeNode<T>> {
         inOrderTraverse(rootNode!!)
