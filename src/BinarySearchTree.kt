@@ -88,17 +88,37 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         // find the node to delete
         val nodeToDelete = searchFor(key) ?: return
 
+        /**if node to delete doesn't have any children, delete it by nullifying it's link to it's parent node**/
+        if (nodeToDelete.rightNode == null && nodeToDelete.leftNode == null) {
+            if (nodeToDelete.key > nodeToDelete.parentNode!!.key) nodeToDelete.parentNode?.rightNode = null
+            else nodeToDelete.parentNode?.leftNode = null
+            return
+        }
+
+        /** if the node to delete doesn't have any child node in the right but have a child node on it's left,
+         *  Connect the node to delete's parent node to the node to delete child node on the left**/
+        if (nodeToDelete.rightNode == null && nodeToDelete.leftNode != null) {
+            if(nodeToDelete.key > nodeToDelete.parentNode!!.key) nodeToDelete.parentNode?.rightNode = nodeToDelete.leftNode
+            else nodeToDelete.parentNode?.leftNode = nodeToDelete.leftNode
+        }
+
         // search for the smallest node to the right of the node to delete
+        val replacementNode =
+            if (nodeToDelete.rightNode != null) findSmallestNodeFrom(nodeToDelete.rightNode!!) else nodeToDelete
+
+        if (nodeToDelete != nodeToDelete && replacementNode.leftNode == null) {
+            replacementNode.leftNode = nodeToDelete.leftNode
+        }
     }
 
-    private fun findSmallestNode(node: TreeNode<T>): TreeNode<T> {
+    private fun findSmallestNodeFrom(node: TreeNode<T>): TreeNode<T> {
         if (node.leftNode == null) return node // this is the smallest node
-        return findSmallestNode(node.leftNode!!)
+        return findSmallestNodeFrom(node.leftNode!!)
     }
 
-    override fun findSmallestNode(key: T): TreeNode<T>? {
+    override fun findSmallestNodeFrom(key: T): TreeNode<T>? {
         val node = searchFor(key)
-        if (node != null) return findSmallestNode(node)
+        if (node != null) return findSmallestNodeFrom(node)
         return null
     }
 

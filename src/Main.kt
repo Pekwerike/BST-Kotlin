@@ -20,7 +20,5 @@ fun main(args: Array<String>) {
     for(node in nodes){
      //   System.out.print("${node.key} ")
     }
-    System.out.println("Smallest node to the left of ${binarySearchTree.findSmallestNode(
-        
-    )}")
+    System.out.println("Smallest node in the tree is ${binarySearchTree.findSmallestNodeFrom(binarySearchTree.rootNode?.key!!)?.parentNode?.key}")
 }

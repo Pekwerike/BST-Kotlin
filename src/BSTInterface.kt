@@ -5,6 +5,6 @@ interface BSTInterface<T : Comparable<T>> {
     fun inOrderTraversal(): MutableList<BinarySearchTree.TreeNode<T>>
     fun insertNode(key: T)
     fun deleteNode(key : T)
-    fun findSmallestNode(key: T) : BinarySearchTree.TreeNode<T>?
+    fun findSmallestNodeFrom(key: T) : BinarySearchTree.TreeNode<T>?
 
 }
