@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cd40913-4c4c-4c0a-9014-e7dd7274dc7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BSTInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/BSTInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BSTInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTInterface.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchTree.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
