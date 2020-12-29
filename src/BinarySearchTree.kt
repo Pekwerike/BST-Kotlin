@@ -23,7 +23,7 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         return searchFor(key, rootNode!!)
     }
 
-    override fun searchFor(key: T, node: TreeNode<T>): TreeNode<T>? {
+    private fun searchFor(key: T, node: TreeNode<T>): TreeNode<T>? {
         if (key > node.key) {
             // search to the right of the node
             if (node.rightNode != null) return searchFor(key, node.rightNode!!)
@@ -41,7 +41,7 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         return nodesList
     }
 
-    override fun inOrderTraverse(node: TreeNode<T>) {
+    private fun inOrderTraverse(node: TreeNode<T>) {
         // left -> root -> right
         if (node.leftNode != null) {
             inOrderTraverse(node.leftNode!!)
@@ -60,7 +60,7 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         }
     }
 
-    override fun insertNode(key: T, root: TreeNode<T>) {
+    private fun insertNode(key: T, root: TreeNode<T>) {
         if (key > root.key) {
             // go to the right of the node
             if (root.rightNode == null) {
@@ -91,6 +91,15 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         // search for the smallest node to the right of the node to delete
     }
 
-    fun findSmallestNode()
+    private fun findSmallestNode(node: TreeNode<T>): TreeNode<T> {
+        if (node.leftNode == null) return node // this is the smallest node
+        return findSmallestNode(node.leftNode!!)
+    }
+
+    override fun findSmallestNode(key: T): TreeNode<T>? {
+        val node = searchFor(key)
+        if (node != null) return findSmallestNode(node)
+        return null
+    }
 
 }
