@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3cd40913-4c4c-4c0a-9014-e7dd7274dc7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BSTInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/BSTInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree$TreeNode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/BinarySearchTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BinarySearchTree/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BinarySearchTree/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BSTInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTInterface.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinarySearchTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchTree.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
@@ -145,22 +148,22 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="430" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1463.783@0.0.1463.783" timestamp="1609249346922" />
-    <state width="1408" height="230" key="GridCell.Tab.0.bottom" timestamp="1609259653423">
+    <state width="1408" height="183" key="GridCell.Tab.0.bottom" timestamp="1609259927383">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="230" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1609259653423" />
-    <state width="1408" height="230" key="GridCell.Tab.0.center" timestamp="1609259653423">
+    <state width="1408" height="183" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1609259927383" />
+    <state width="1408" height="183" key="GridCell.Tab.0.center" timestamp="1609259927383">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="230" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1609259653423" />
-    <state width="1408" height="230" key="GridCell.Tab.0.left" timestamp="1609259653423">
+    <state width="1408" height="183" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1609259927383" />
+    <state width="1408" height="183" key="GridCell.Tab.0.left" timestamp="1609259927383">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="230" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1609259653423" />
-    <state width="1408" height="230" key="GridCell.Tab.0.right" timestamp="1609259653423">
+    <state width="1408" height="183" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1609259927383" />
+    <state width="1408" height="183" key="GridCell.Tab.0.right" timestamp="1609259927383">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="230" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1609259653423" />
+    <state width="1408" height="183" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1609259927383" />
     <state width="1408" height="230" key="GridCell.Tab.1.bottom" timestamp="1609259653423">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
@@ -185,16 +188,5 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="310" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1463.783@0.0.1463.783" timestamp="1609248734210" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/BinarySearchTree.kt</url>
-          <line>88</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

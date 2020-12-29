@@ -3,21 +3,6 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
     override var rootNode: TreeNode<T>? = null
     override val nodesList: MutableList<TreeNode<T>> = mutableListOf()
 
-    class TreeNode<T : Comparable<T>>(data: T) : Comparable<TreeNode<T>> {
-        var key: T = data
-        var rightNode: TreeNode<T>? = null
-        var leftNode: TreeNode<T>? = null
-        var parentNode: TreeNode<T>? = null
-
-        override fun compareTo(other: TreeNode<T>): Int {
-            if (key == other.key) {
-                return 0
-            } else if (key > other.key) {
-                return 1
-            }
-            return -1
-        }
-    }
 
     override fun searchFor(key: T): TreeNode<T>? {
         return searchFor(key, rootNode!!)
