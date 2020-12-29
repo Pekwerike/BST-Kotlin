@@ -7,6 +7,7 @@ class BinarySearchTree<T : Comparable<T>> {
         var key: T = data
         var rightNode: TreeNode<T>? = null
         var leftNode: TreeNode<T>? = null
+        var parentNode: TreeNode<T>? = null
 
         override fun compareTo(other: TreeNode<T>): Int {
             if (key == other.key) {
@@ -31,9 +32,8 @@ class BinarySearchTree<T : Comparable<T>> {
             // search to the left of the node
             if (node.leftNode != null) return searchFor(key, node.leftNode!!)
             else return "Key not found"
-        } else {
-            return "Key found"
-        }
+        } else return "Key found"
+
     }
 
     fun inOrderTraversal(): MutableList<TreeNode<T>> {
@@ -61,18 +61,20 @@ class BinarySearchTree<T : Comparable<T>> {
     }
 
     private fun insertNode(key: T, root: TreeNode<T>) {
-        if (key.compareTo(root.key) > 0) {
+        if (key > root.key) {
             // go to the right of the node
             if (root.rightNode == null) {
                 root.rightNode = TreeNode(key)
+                root.rightNode?.parentNode = root
                 return
             } else {
                 insertNode(key, root.rightNode!!)
             }
-        } else if (key.compareTo(root.key) < 0) {
+        } else if (key < root.key) {
             // go to the left of the node
             if (root.leftNode == null) {
                 root.leftNode = TreeNode(key)
+                root.leftNode?.parentNode = root
                 return
             } else {
                 insertNode(key, root.leftNode!!)
