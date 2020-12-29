@@ -35,6 +35,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="KotlinExtractInterfaceDialog.RECENT_KEYS">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="BinarySearchTree" />
@@ -128,33 +133,69 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="493" y="44" key="#com.intellij.ide.util.MemberChooser" timestamp="1609247365130">
+    <state x="493" y="44" key="#com.intellij.ide.util.MemberChooser" timestamp="1609256134071">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="493" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1463.783@0.0.1463.783" timestamp="1609247365130" />
+    <state x="493" y="44" key="#com.intellij.ide.util.MemberChooser/0.0.1463.783@0.0.1463.783" timestamp="1609256134071" />
+    <state x="400" y="122" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1609256092484">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state x="400" y="122" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1463.783@0.0.1463.783" timestamp="1609256092484" />
     <state x="430" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609249346922">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="430" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1463.783@0.0.1463.783" timestamp="1609249346922" />
-    <state width="1408" height="183" key="GridCell.Tab.0.bottom" timestamp="1609255930640">
+    <state width="1408" height="183" key="GridCell.Tab.0.bottom" timestamp="1609256517438">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="183" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1609255930640" />
-    <state width="1408" height="183" key="GridCell.Tab.0.center" timestamp="1609255930640">
+    <state width="1408" height="183" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1609256517438" />
+    <state width="1408" height="183" key="GridCell.Tab.0.center" timestamp="1609256517438">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="183" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1609255930640" />
-    <state width="1408" height="183" key="GridCell.Tab.0.left" timestamp="1609255930640">
+    <state width="1408" height="183" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1609256517438" />
+    <state width="1408" height="183" key="GridCell.Tab.0.left" timestamp="1609256517438">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="183" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1609255930640" />
-    <state width="1408" height="183" key="GridCell.Tab.0.right" timestamp="1609255930640">
+    <state width="1408" height="183" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1609256517438" />
+    <state width="1408" height="183" key="GridCell.Tab.0.right" timestamp="1609256517438">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1408" height="183" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1609255930640" />
+    <state width="1408" height="183" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1609256517438" />
+    <state width="1408" height="230" key="GridCell.Tab.1.bottom" timestamp="1609256481400">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1408" height="230" key="GridCell.Tab.1.bottom/0.0.1463.783@0.0.1463.783" timestamp="1609256481400" />
+    <state width="1408" height="230" key="GridCell.Tab.1.center" timestamp="1609256481400">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1408" height="230" key="GridCell.Tab.1.center/0.0.1463.783@0.0.1463.783" timestamp="1609256481400" />
+    <state width="1408" height="230" key="GridCell.Tab.1.left" timestamp="1609256481399">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1408" height="230" key="GridCell.Tab.1.left/0.0.1463.783@0.0.1463.783" timestamp="1609256481399" />
+    <state width="1408" height="230" key="GridCell.Tab.1.right" timestamp="1609256481400">
+      <screen x="0" y="0" width="1463" height="783" />
+    </state>
+    <state width="1408" height="230" key="GridCell.Tab.1.right/0.0.1463.783@0.0.1463.783" timestamp="1609256481400" />
     <state x="310" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1609248734210">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="310" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1463.783@0.0.1463.783" timestamp="1609248734210" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/BinarySearchTree.kt</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/BinarySearchTree.kt</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
