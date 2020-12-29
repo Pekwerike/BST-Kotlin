@@ -98,17 +98,19 @@ class BinarySearchTree<T : Comparable<T>> : BSTInterface<T> {
         /** if the node to delete doesn't have any child node in the right but have a child node on it's left,
          *  Connect the node to delete's parent node to the node to delete child node on the left**/
         if (nodeToDelete.rightNode == null && nodeToDelete.leftNode != null) {
-            if(nodeToDelete.key > nodeToDelete.parentNode!!.key) nodeToDelete.parentNode?.rightNode = nodeToDelete.leftNode
+            if (nodeToDelete.key > nodeToDelete.parentNode!!.key) nodeToDelete.parentNode?.rightNode =
+                nodeToDelete.leftNode
             else nodeToDelete.parentNode?.leftNode = nodeToDelete.leftNode
+            return
         }
 
-        // search for the smallest node to the right of the node to delete
-        val replacementNode =
-            if (nodeToDelete.rightNode != null) findSmallestNodeFrom(nodeToDelete.rightNode!!) else nodeToDelete
-
-        if (nodeToDelete != nodeToDelete && replacementNode.leftNode == null) {
-            replacementNode.leftNode = nodeToDelete.leftNode
-        }
+        /** search for the smallest node to the right of the node to delete
+         * then link the replacement node to the node to delete parent and node to delete left children**/
+        val replacementNode = findSmallestNodeFrom(nodeToDelete.rightNode!!)
+        replacementNode.leftNode = nodeToDelete.leftNode
+        if (nodeToDelete.key > nodeToDelete.parentNode!!.key) nodeToDelete.parentNode?.rightNode = replacementNode
+        else nodeToDelete.parentNode?.leftNode = replacementNode
+        return
     }
 
     private fun findSmallestNodeFrom(node: TreeNode<T>): TreeNode<T> {

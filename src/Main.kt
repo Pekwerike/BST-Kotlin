@@ -14,11 +14,12 @@ fun main(args: Array<String>) {
     binarySearchTree.insertNode(14)
     binarySearchTree.insertNode(3)
     binarySearchTree.insertNode(2)
+    binarySearchTree.deleteNode(8)
 
     val nodes = binarySearchTree.inOrderTraversal()
 
     for(node in nodes){
      //   System.out.print("${node.key} ")
     }
-    System.out.println("Smallest node in the tree is ${binarySearchTree.findSmallestNodeFrom(binarySearchTree.rootNode?.key!!)?.parentNode?.key}")
+    System.out.println("${binarySearchTree.searchFor(8)?.key ?: "Key doesn't exist in the BST"}")
 }
